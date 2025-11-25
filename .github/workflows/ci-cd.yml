@@ -48,7 +48,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Executar testes unitários
-      run: docker-compose run --rm api python -m unittest discover
+      run: python -m unittest discover
 
   deploy:
     name: Deploy
