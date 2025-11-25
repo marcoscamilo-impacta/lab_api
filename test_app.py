@@ -1,10 +1,10 @@
 import unittest
 from app import app
-import Werkzeug
+import werkzeug
 
 # Patch temporário para adicionar o atributo '__version__' em werkzeug
-if not hasattr(Werkzeug, '__version__'):
-    Werkzeug.__version__ = "mock-version"
+if not hasattr(werkzeug, '__version__'):
+    werkzeug.__version__ = "mock-version"
 
 class APITestCase(unittest.TestCase):
     @classmethod
